@@ -14,3 +14,4 @@ SpeecgManager::~SpeecgManager()
 
 }
 //第二次测试
+//重新测试
