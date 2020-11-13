@@ -4,14 +4,30 @@
 
 #include "speechManger.h"
 
-SpeecgManager::SpeecgManager()
+SpeechManager::SpeechManager()
 {
 
 }
 
-SpeecgManager::~SpeecgManager()
+void SpeechManager:: show_Menu(){
+    cout<<"************************************"<<endl;
+    cout<<"**********»¶Ó­À´µ½ÑÝ½²±ÈÈü*************"<<endl;
+    cout<<"**********1.¿ªÊ¼ÑÝ½²±ÈÈü**************"<<endl;
+    cout<<"**********2.²é¿´Íù½ì¼ÇÂ¼**************"<<endl;
+    cout<<"**********3.Çå¿Õ±ÈÈü¼ÇÂ¼**************"<<endl;
+    cout<<"**********0.ÍË³ö±ÈÈü³ÌÐò**************"<<endl;
+    cout<<"************************************"<<endl;
+    cout<<endl;
+}
+void SpeechManager:: exitSystem(){
+    cout<<"»¶Ó­ÏÂ´ÎÊ¹ÓÃ£¡"<<endl;
+    system("pause");
+    exit(0);
+}
+
+SpeechManager::~SpeechManager()
 {
 
 }
-//ç¬¬äºŒæ¬¡æµ‹è¯•
-//é‡æ–°æµ‹è¯•
+//µÚ¶þ´Î²âÊÔ
+//ÖØÐÂ²âÊÔ

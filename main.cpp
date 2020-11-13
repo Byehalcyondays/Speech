@@ -1,12 +1,52 @@
 #include <iostream>
+using namespace std;
+#include "speechManger.h"
+
 
 int main()
 {
-    std::cout << "Hello, World!" << std::endl;
+    //cout << "Hello, World!" << std::endl;
+
+    //´´½¨¹ÜÀíÀà¶ÔÏó
+    SpeechManager sm;
+
+
+    int choice=0; //´æ´¢ÓÃ»§ÊäÈë
+
+    while (true){
+        sm.show_Menu();
+        cout<< "ÇëÊäÈëÄúµÄÑ¡Ôñ£º "<<endl;
+        cin>>choice;
+
+        switch(choice)
+        {
+            case 1:
+                //start
+                break;
+            case 2:
+                //search
+                break;
+            case 3:
+                //clear
+                break;
+            case 0:
+                //exit
+                sm.exitSystem();
+                break;
+            default:
+                //ÇåÆÁ
+
+                system("cls");
+
+        }
+    }
+
+
+    system("pause");
     return 0;
 }
 
 
-//æ›´æ–°ä»¥åŠæäº¤çš„æµ‹è¯•
-//ç¬¬äºŒæ¬¡æµ‹è¯•
-//é‡æ–°æµ‹è¯•
+//¸üĞÂÒÔ¼°Ìá½»µÄ²âÊÔ
+//µÚ¶ş´Î²âÊÔ
+//ÖØĞÂ²âÊÔ

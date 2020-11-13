@@ -7,16 +7,21 @@
 #include <iostream>
 using namespace std;
 
-class SpeecgManager{
+class SpeechManager{
 public:
-    //æ„é€ å‡½æ•°
-    SpeecgManager();
-    //ææ„å‡½æ•°
-    ~SpeecgManager();
+    //¹¹Ôìº¯Êı
+    SpeechManager();
+
+    void show_Menu();
+
+    void exitSystem();
+
+    //Îö¹¹º¯Êı
+    ~SpeechManager();
 };
 
-//ç¬¬äºŒæ¬¡æµ‹è¯•
-//é‡æ–°æµ‹è¯•
+//µÚ¶ş´Î²âÊÔ
+//ÖØĞÂ²âÊÔ
 
 
 
