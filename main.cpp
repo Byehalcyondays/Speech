@@ -1,19 +1,25 @@
 #include <iostream>
 using namespace std;
 #include "speechManger.h"
-
+#include <string>
 
 int main()
 {
     //cout << "Hello, World!" << std::endl;
 
-    //创建管理类对象
+    //Create object of management class
     SpeechManager sm;
+    //for test
+//    for(map<int,Speaker>::iterator it=sm.m_Speaker.begin();it!=sm.m_Speaker.end();it++)
+//    {
+//        cout<<"选手编号： "<<it->first<<"姓名： "<<it->second.m_Name<<"分数： "<<it->second.m_Score[0]<<endl;
+//
+//    }
 
 
-    int choice=0; //存储用户输入
+    int choice=0; //Store users' input
 
-    while (true){
+    while (choice!=100){
         sm.show_Menu();
         cout<< "请输入您的选择： "<<endl;
         cin>>choice;
@@ -21,20 +27,21 @@ int main()
         switch(choice)
         {
             case 1:
-                //start
+                //start speech contest
+                sm.startSpeech();
                 break;
             case 2:
-                //search
+                //search record
                 break;
             case 3:
-                //clear
+                //clear record
                 break;
             case 0:
-                //exit
+                //exit system
                 sm.exitSystem();
                 break;
             default:
-                //清屏
+                //clear screen
 
                 system("cls");
 
