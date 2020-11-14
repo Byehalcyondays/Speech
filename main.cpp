@@ -1,5 +1,7 @@
 #include <iostream>
+
 using namespace std;
+
 #include "speechManger.h"
 #include <string>
 #include <ctime>
@@ -7,7 +9,7 @@ using namespace std;
 int main()
 {
     //random seed
-    srand((unsigned int)time(NULL));
+    srand((unsigned int) time(NULL));
 
     //cout << "Hello, World!" << std::endl;
 
@@ -21,14 +23,15 @@ int main()
 //    }
 
 
-    int choice=0; //Store users' input
+    int choice = 0; //Store users' input
 
-    while (choice!=100){
+    while (choice != 100)
+    {
         sm.show_Menu();
-        cout<< "请输入您的选择： "<<endl;
-        cin>>choice;
+        cout << "请输入您的选择： " << endl;
+        cin >> choice;
 
-        switch(choice)
+        switch (choice)
         {
             case 1:
                 //start speech contest

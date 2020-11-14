@@ -14,9 +14,11 @@
 #include <numeric>
 #include <string>
 #include <fstream>
+
 using namespace std;
 
-class SpeechManager{
+class SpeechManager
+{
 public:
     //constructor
     SpeechManager();
@@ -60,31 +62,27 @@ public:
 
     //member attributes
     //first round players
-    vector<int>v1;
+    vector<int> v1;
 
     //second round players
-    vector<int>v2;
+    vector<int> v2;
 
     //final round players
-    vector<int>vVictory;
+    vector<int> vVictory;
 
     //name + number
-    map<int,Speaker>m_Speaker;
+    map<int, Speaker> m_Speaker;
 
     //round
-    int m_Index=1;
+    int m_Index = 1;
 
     //file is empty or not
     bool fileIsEmpty;
 
     //record
-    map<int,vector<string>>m_Record;
+    map<int, vector<string>> m_Record;
 
 };
-
-
-
-
 
 
 #endif //SPEECH_SPEECHMANGER_H
