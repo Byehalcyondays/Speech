@@ -43,23 +43,42 @@ public:
     //save record
     void saveRecord();
 
+    //load record
+    void loadRecord();
+
+    //show record
+    void showRecord();
+
+    //clear record
+    void clearRecord();
+
     //destructor
     ~SpeechManager();
 
     //initialize containers
     void initSpeech();
+
     //member attributes
     //first round players
     vector<int>v1;
+
     //second round players
     vector<int>v2;
+
     //final round players
     vector<int>vVictory;
+
     //name + number
     map<int,Speaker>m_Speaker;
 
     //round
     int m_Index=1;
+
+    //file is empty or not
+    bool fileIsEmpty;
+
+    //record
+    map<int,vector<string>>m_Record;
 
 };
 

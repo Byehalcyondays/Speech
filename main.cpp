@@ -2,9 +2,13 @@
 using namespace std;
 #include "speechManger.h"
 #include <string>
+#include <ctime>
 
 int main()
 {
+    //random seed
+    srand((unsigned int)time(NULL));
+
     //cout << "Hello, World!" << std::endl;
 
     //Create object of management class
@@ -32,9 +36,11 @@ int main()
                 break;
             case 2:
                 //search record
+                sm.showRecord();
                 break;
             case 3:
                 //clear record
+                sm.clearRecord();
                 break;
             case 0:
                 //exit system
