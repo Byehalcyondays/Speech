@@ -368,3 +368,4 @@ SpeechManager::~SpeechManager()
 
 }
 
+//更新同步
